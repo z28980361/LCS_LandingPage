@@ -17,6 +17,7 @@ Clone from this repo or download the zip file, open index with any web browsers
 Support
 -------
 If you have any question or concern about this website, you can always find us on our Gitter Chat Room:  https://gitter.im/TheatricallyInclined/LCS?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+
 Or email me:
 Rong Yang: ryang5@buffalo.edu
 
