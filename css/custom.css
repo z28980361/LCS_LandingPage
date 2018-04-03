@@ -1,0 +1,146 @@
+#home{
+  padding-bottom: none;
+  padding-top: 0px;
+}
+#copyright{
+  font-size: 15px;
+}
+body > nav{
+  font-size: 15px;
+}
+small{
+  font-size: 15px !important;
+}
+body{
+  background-image: url("../resource/background.jpg");
+  background-size: 100%;
+  background-repeat: repeat-y;
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+}
+.jumbotron{
+    margin-bottom: 20px; !important;
+    margin-top: 30px;
+}
+/*
+  Reference of background colors: https://www.w3schools.com/bootstrap/bootstrap_theme_me.asp
+*/
+.bg-about{
+  background-color: #1abc9c; /* Green */
+  color: #ffffff;
+}
+.bg-instruction{
+  background-color: #008080;
+  color: #ffffff;
+}
+.bg-download{
+  background-color: #6A5ACD;
+  color: #ffffff;
+}
+.bg-team{
+  background-color: #474e5d; /* Dark Blue */
+  color: #ffffff;
+}
+.bg-contact{
+  background-color: #ffffff; /* White */
+  color: #555555;
+}
+.bg-footer{
+  background-color: #2f2f2f; /* Black Gray */
+  color: #fff;
+}
+.download-color{
+  color: #000000;
+}
+.glyphicon{
+  font-size: 20px;
+}
+.glyphicon-download{
+  font-size: 15px;
+}
+.slider-image-width{
+  width: 100%;
+}
+.profolio_img{
+  margin:0 auto;
+  width: 60%;
+  height: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.icon_32px{
+  width: 32px;
+  height: 32px;
+}
+.icon_28px{
+  width:28px;
+  height:28px;
+  margin-bottom: 5px;
+}
+.padding-top-10{
+  padding-top: 10px;
+}
+.padding-top-20{
+  padding-top: 20px;
+}
+.padding-bottom-20{
+  padding-bottom: 20px;
+}
+.padding-bottom-30{
+  padding-bottom: 30px;
+}
+.padding-left-30{
+  padding-left: 30px;
+}
+.padding-left-right-30{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.padding-top-warning{
+  padding-top: 65px;
+}
+.padding{
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+}
+.footer-padding{
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+}
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+/*reference: https://www.w3schools.com/bootstrap/bootstrap_theme_company.asp*/
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}

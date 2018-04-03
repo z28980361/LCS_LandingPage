@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lighting Controlled Simply</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="js/scroll.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="250">
+  <!--navigation bar-->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#home">Lighting Controlled Simply</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#instruction">Instruction</a></li>
+          <li><a href="#download">Resource</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--jumbotron container-->
+  <div id="home" class="container">
+    <div class="jumbotron">
+      <h1>Lighting Controlled Simply<small>&nbsp by team ThreacallyInclined</small></h1>
+      <p class="padding-top-10">Lighting Controlled Simply(LCS) is a C# desktop based Windows application designed to be an easy to use replacement for two scene preset boards.</p>
+    </div>
+  </div>
+  <!--carousel container-->
+  <div class="container padding-bottom-20">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!--Indicator-->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <!--Wrapper for carousel-->
+      <div class="carousel-inner">
+        <div class="item active">
+          <a href="#download"><img class="img-responsive slider-image-width" src="resource/carousel1.jpg" alt=""/></a>
+          <div class="carousel-caption">
+            <!--<h3>Download</h3>-->
+            <p>Click to download our software</p>
+          </div>
+        </div>
+        <div class="item">
+          <a href="https://github.com/TheatricallyInclined/LCS/issues"><img class="img-responsive slider-image-width" src="resource/carousel2.jpg" alt=""/></a>
+          <div class="carousel-caption">
+            <!--<h3>Support Us</h3>-->
+            <p>Support us on GitHub by reporting issues</p>
+          </div>
+        </div>
+        <div class="item">
+          <a href="#contact"><img class="img-responsive slider-image-width" src="resource/carousel3.jpg" alt=""/></a>
+          <div class="carousel-caption">
+            <!--<h3>Contact Us</h3>-->
+            <p>Find us on our Gitter channel or email us directly</p>
+          </div>
+        </div>
+      </div>
+      <!--left and right controls-->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <!--about container-->
+  <div id="about" class="container bg-about padding slideanim">
+    <div class="text-center">
+      <h1>About LCS</h1>
+      <p class="padding-top-20">LCS or Lighting Controlled Simply is a C# desktop based Windows application designed to be an easy to use replacement for two scene preset boards. We are utilizing the open source USB to DMX converter from <a class="download-color" href="https://www.enttec.com/us/products/controls/dmx-usb/open-dmx-usb/">Enttec</a> to help minimize cost and simplify user hardware complexity.
+        We are looking to deliver all the simplicity and function of a physical board while also having extra tools commonly found in high end boards in order to help the user.</p>
+    </div>
+    <div class="padding-top-20 padding-left-right-30">
+    </div>
+    <div class="padding-top-20 padding-left-right-30">
+      <h2>Minimum Viable Product(MVP) Features</h2>
+      <ul>
+        <li>Live computer control of DMX lights</li>
+        <li>Ability to control any type of DMX functionality including but not limited to Color (RGBCMY), Color Temperature</li>
+        <li>Have instant and timed transitions between at least 2 scenes</li>
+      </ul>
+    </div>
+    <div class="padding-top-20 padding-left-right-30">
+      <h2>Add on Features:</h2>
+      <ul>
+        <li>Control multiple types of DMX Lights at once</li>
+        <li>Ability to Create timed Show files and a cue list</li>
+        <li>Ability to create light groups of similar but different addressed fixtures</li>
+        <li>Sound activated mode(Control the light via external sound from environment)</li>
+      </ul>
+    </div>
+  </div>
+  <!--instruction container-->
+  <div id="instruction" class="container bg-instruction padding slideanim">
+    <div class="text-center">
+      <h1>Instruction</h1>
+    </div>
+    <div class="padding-top-20 padding-left-right-30">
+      <p>Our software is developed in Windows System. There may be compatibility issues if you run or developed it in Linux or Mac System.</p>
+      <h2>Hardware Needed: </h2>
+      <ul>
+        <li>A <a href="https://en.wikipedia.org/wiki/DMX512" class="download-color">DMX</a> based light (A light that can be controlled through DMX512)</li>
+        <li>Enttec USB to DMX converter (which can be found <a href="https://www.enttec.com/us/products/controls/dmx-usb/open-dmx-usb/" class="download-color">here</a>)</li>
+        <li>DMX Cable</li>
+        <li>5-pin (male) to 3-pin (female) DMX adapter (if necessary for your light)</li>
+      </ul>
+      <h2>Software Needed: </h2>
+      <ul>
+        <li><a href="resource/LCS.exe" class="download-color">LCS software</a></li>
+        <li>Enttec Open DMX USB Driver (which can be found <a href="https://www.enttec.com/us/products/controls/dmx-usb/open-dmx-usb/" class="download-color">here</a>)</li>
+      </ul>
+    </div>
+    <div class="padding-top-20 padding-left-right-30">
+      <h2>Non-technical User Guide: </h2>
+      <ul>
+        <li>Properly connect the DMX light and the Enttec Converter to your devices.</li>
+        <li>Download our executable software</li>
+        <li>Install Enttec drivers from Enttec website</li>
+        <li>Double click to run our software (ignore all Windows warnings)</li>
+        <li>Up to this stage, the software should be running, more details and explanations about how to use the software can be found in the <a class="download-color" href="resource/Non-technical_user_manual.pdf">non-technical user mannual</a></li>
+      </ul>
+    </div>
+    <div class="padding-top-20 padding-left-right-30">
+      <h2>Technical User Guide: </h2>
+      <p>If you only want to run this software, please follow the non-technical user guide above. If you want to view the source code or interested in the development of the software, follow the instruction below</p>
+      <ul>
+        <li>Properly connect the DMX light and the Enttec Converter to your devices.</li>
+        <li>Download our software (zip file) <a class="download-color" href="resource/download.zip">here<span class="glyphicon glyphicon-download"></span></a>, unzip the file.
+          Open the project solution file (LCS\LCS.sln) found in the LCS folder with Visual Studio. Alternatively, one can clone the project directly from our <a class="download-color" href="https://github.com/TheatricallyInclined/LCS/tree/master">GitHub</a> with Visual Studio</li>
+        <li>Up to this stage, you should have source code in front of you. Please consult the <a class="download-color" href="resource/Technical_documentation.md">technical documentation<span class="glyphicon glyphicon-download"></span></a></li> for code documentation and more technical details about our project.
+      </ul>
+    </div>
+  </div>
+  <!--Download container-->
+  <div id="download" class="container bg-download text-center padding slideanim">
+    <h1>Resource</h1>
+    <div class="padding-top-20">
+      <p>Non-technical user can download executable file directly <a class="download-color" href="resource/LCS.exe" download>here<span class="glyphicon glyphicon-download"></span></a></p>
+      <p>The non-technical user mannual can be <a class="download-color" href="resource/Non-technical_user_manual.pdf">viewed and downloaded here<span class="glyphicon glyphicon-download"></span></a></p>
+      <p>Technical user can download our zip file <a class="download-color" href="resource/download.zip" download>here<span class="glyphicon glyphicon-download"></span></a></p>
+      <p>The technical documentation can be <a class="download-color" href="resource/Technical_documentation.md" download>downloaded here<span class="glyphicon glyphicon-download"></span></a></p>
+      <p>Visual Studio can be <a class="download-color" href="https://www.visualstudio.com/downloads/" download>downloaded here<span class="glyphicon glyphicon-download"></span></a></p>
+      <p>Enttec documentation can be <a class="download-color" href="https://www.enttec.com/us/products/controls/dmx-usb/open-dmx-usb/" download>viewed and downloaded here<span class="glyphicon glyphicon-download"></span></a></p>
+    </div>
+  </div>
+  <!--Team container-->
+  <div id="team" class="container bg-team text-center padding slideanim">
+    <h1>Team Information</h1>
+    <div class="row padding-top-10">
+      <div class="col-sm-4 text-center">
+        <img src="resource/rong_pic.jpg" class="img-circle img-responsive profolio_img" alt="resource/pic_holder.jpg"/>
+        <p>Rong Yang</p>
+        <p>GUI Design</p>
+        <p>Backend Developer</p>
+        <a href="https://github.com/z28980361"><img src="resource/GitHub.png" class="icon_32px"/></a>
+        <a href="mailto:ryang5@buffalo.edu"><img src="resource/email.png" class="icon_32px"/></span></a>
+        <i class="fab fa-github"></i>
+      </div>
+      <div class="col-sm-4">
+        <img src="resource/alex_pic.jpg" class="img-circle img-responsive profolio_img" alt="resource/pic_holder.jpg"/>
+        <p>Alex Killion</p>
+        <p>Backend Developer</p>
+        <a href="https://github.com/apkillion"><img src="resource/GitHub.png" class="icon_32px"/></a>
+        <a href="mailto:apkillio@buffalo.edu"><img src="resource/email.png" class="icon_32px"/></span></a>
+      </div>
+      <div class="col-sm-4">
+        <img src="resource/pic_holder.jpg" class="img-circle img-responsive profolio_img" alt="resource/pic_holder.jpg"/>
+        <p>Zack Bowen</p>
+        <p>Communication Protocol</p>
+        <a href="https://github.com/zackrb4"><img src="resource/GitHub.png" class="icon_32px"/></a>
+        <a href="mailto:zackbowe@buffalo.edu"><img src="resource/email.png" class="icon_32px"/></span></a>
+      </div>
+    </div>
+  </div>
+  <!--contact container-->
+  <div id="contact" class="container bg-contact text-center padding slideanim">
+    <h1>Contact</h1>
+    <p>Support us on <a href="https://github.com/TheatricallyInclined/LCS">GitHub&nbsp<img src="resource/GitHub.png" class="icon_28px"/></a></p>
+    <p>
+      Find us on our <a href="https://gitter.im/TheatricallyInclined/LCS?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge">Gitter Channel&nbsp<img src="resource/gitter.png" class="icon_28px"/></a>
+    </p>
+    <p>OR</p>
+    <p>Email us directly: </p>
+    <p>Rong Yang:<a href="mailto:ryang5@buffalo.edu">&nbspryang5@buffalo.edu&nbsp<img src="resource/email.png" class="icon_28px"/></span></a></p>
+    <p>Alex Killion: <a href="mailto:apkillio@buffalo.edu">&nbspapkillio@buffalo.edu&nbsp<img src="resource/email.png" class="icon_28px"/></span></a></p>
+    <p>Zack Bowen: <a href="mailto:zackbowe@buffalo.edu">&nbspzackbowe@buffalo.edu&nbsp<img src="resource/email.png" class="icon_28px"/></span></a></p>
+  </div>
+  <!--footer-->
+  <div id="footer" class="container-fluid bg-footer text-center footer-padding">
+    <a href="#home" title="back-top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    <p>Powered by Bootstrap</p>
+    <p id="copyright">&copy 2018 Copyright: ThreacallyInclined Team</p>
+  </div>
+
+
+</body>
+</html>
