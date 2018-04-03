@@ -1,5 +1,5 @@
 # LCS_LandingPage
-# This is landing page for our LCS project, the project repo can be found at: https://github.com/TheatricallyInclined/LCS
+**This is landing page for our LCS project, the project repo can be found at: https://github.com/TheatricallyInclined/LCS**
 
 **Live Site URL: http://www.acsu.buffalo.edu/~ryang5/**
 
