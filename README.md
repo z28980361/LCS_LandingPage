@@ -8,6 +8,7 @@ Features
 --------
 Providing download link to our Lighting Controlled Simply
 Responsive view for different screen sizes
+
 Installation
 ------------
 Clone from this repo or download the zip file, open index with any web browsers
